@@ -1,5 +1,6 @@
 == README
-
+## Blocipedia : Social Wikis
+Made by Mitch and with my mentor at [Bloc]
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
