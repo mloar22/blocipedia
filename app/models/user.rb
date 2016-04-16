@@ -12,7 +12,12 @@ class User < ActiveRecord::Base
          def admin?
             role == 'admin'
          end
-#            def ( PREMIUM AND STANDARD)
-#           role == 'admin'
-#           end
+         # 
+        #  def standard
+        #     role == 'standard'
+        #  end
+         #
+        #  def premium?
+        #     role == 'premium'
+        #  end
 end
