@@ -14,7 +14,7 @@ gem 'bootstrap-sass'
 gem 'figaro'
 gem 'pry'
 gem 'devise'
-
+gem 'pundit'
 
 group :production do
   # gem 'pg' THIS BREAKS BUNDLE
