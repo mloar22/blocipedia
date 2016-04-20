@@ -1,9 +1,9 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
+<h1><%= markdown_to_html @wiki.title %></h1>
 
-<p>
-  <strong>Title:</strong>
-  <%= @wiki.title %>
-</p>
+<h3>   <strong>Title:</strong>
+ <%= @wiki.title%> </h3>
 
 <p>
   <strong>Body:</strong>
@@ -22,3 +22,4 @@
 
 <%= link_to 'Edit', edit_wiki_path(@wiki) %> |
 <%= link_to 'Back', wikis_path %>
+</div>

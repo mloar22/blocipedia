@@ -15,7 +15,9 @@ gem 'figaro'
 gem 'pry'
 gem 'devise'
 gem 'pundit'
-gem 'faker'
+gem 'redcarpet'
+
+gem 'stripe'
 
 group :production do
   # gem 'pg' THIS BREAKS BUNDLE
