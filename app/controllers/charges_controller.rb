@@ -1,18 +1,16 @@
 class ChargesController < ApplicationController
 
-  resources :charges, only: [:new, :create]
-
-  def initialize (charges)
-  end
+  # def initialize(charges)
+  # end
 
   def new
     @stripe_btn_data = {
       key: "#{ Rails.configuration.stripe[:publishable_key] }",
-      description: "BigMoney Membership - #{current_user.name}",
-      amount: Amount.default
+      description: "Description Goes here",
+      amount: 100
     }
   end
-  
+
   def create
     # Creates a Stripe Customer object, for associating
     # with the charge
@@ -38,14 +36,6 @@ class ChargesController < ApplicationController
    rescue Stripe::CardError => e
      flash[:alert] = e.message
      redirect_to new_charge_path
-  end
-
-  def new
-    @stripe_btn_data = {
-      key: "#{ Rails.configuration.stripe[:publishable_key] }",
-      description: "BigMoney Membership - #{current_user.name}",
-      amount: Amount.default
-    }
   end
 
 end

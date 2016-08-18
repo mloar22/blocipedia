@@ -16,7 +16,7 @@ gem 'pry'
 gem 'devise'
 gem 'pundit'
 gem 'redcarpet'
-
+gem 'sqlite3'
 gem 'stripe'
 
 group :production do
